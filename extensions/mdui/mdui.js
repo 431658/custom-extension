@@ -38,7 +38,7 @@
 		}
 		catch{
 			return String(buttons).split(",").map((button)=>{
-				const [text, value, disabled]=button.split(":");
+				const [text, value, disabled]=button.split(";");
 				return fn({
 					text,
 					value: value ?? text,
